@@ -1,0 +1,6 @@
+Mahasiswa takut pada dosen
+Dosen takut pada dekan
+Dekan takut pada rektor
+Rektor takut pada menteri
+Menteri takut pada presiden
+Presiden takut pada mahasiswa.
