@@ -17,7 +17,7 @@ from data_helper import get_data
 text, chars, char_indices, indices_char = get_data()
 
 # cut the text in semi-redundant sequences of maxlen characters
-maxlen = 40
+maxlen = 30
 step = 3
 sentences = []
 next_chars = []
@@ -108,7 +108,7 @@ def generate_poetry(sentence, diversity = 0.5):
     print('~~~ Generating with : "' + sentence.strip() + '"')
     sys.stdout.write(generated)
 
-    for i in range(1000):
+    for i in range(800):
         x_pred = np.zeros((1, maxlen, len(chars)))
         for t, char in enumerate(sentence):
             x_pred[0, t, char_indices[char]] = 1.
